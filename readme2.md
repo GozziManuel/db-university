@@ -50,6 +50,16 @@ WHERE students.degree_id LIKE degrees.id
 ORDER BY students.name
 
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
+   SELECT
+   degrees.id degrees_id,
+   degrees.name degrees_name,
+   courses.id courses_id,
+   courses.name courses_name,
+   courses.description courses_description
+   FROM `db-university`.degrees
+
+INNER JOIN `db-university`.courses
+ON courses.id = degrees.id
 
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di
    Matematica (54)
