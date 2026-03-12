@@ -34,6 +34,21 @@ WHERE teacher_id = 44
    sono iscritti e il relativo dipartimento, in ordine alfabetico per cognome e
    nome
 
+SELECT
+students.degree_id students_degree_id,
+students.name students_name,
+students.surname students_surname,
+degrees.id degrees_id,
+degrees.name degrees_name,
+departments.id departments_id,
+departments.name departments_name
+FROM `db-university`.students
+
+INNER JOIN `db-university`.degrees, `db-university`.departments
+
+WHERE students.degree_id LIKE degrees.id
+ORDER BY students.name
+
 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di
