@@ -60,9 +60,9 @@ ORDER BY students.name
 
 INNER JOIN `db-university`.courses
 ON courses.id = degrees.id
-
-6. Selezionare tutti i docenti che insegnano nel Dipartimento di
-   Matematica (54)
+?? 6. Selezionare tutti i docenti che insegnano nel Dipartimento di
+Matematica (54)
+??
 
 7. BONUS: Selezionare per ogni studente il numero di tentativi sostenuti
    per ogni esame, stampando anche il voto massimo. Successivamente,
